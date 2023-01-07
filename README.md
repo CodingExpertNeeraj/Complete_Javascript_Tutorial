@@ -1,1 +1,1 @@
-Complete javascript tutoeial 
+Complete javascript tutorial 

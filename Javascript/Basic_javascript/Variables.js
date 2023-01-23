@@ -18,6 +18,8 @@ console.log(x , y)
 // Third way
 const p = 20;
 const q = 30;
+// if we difine a variable with const  then we can't initilize it again
+// we can not do lie this  ->    const p = 
 
 // now we have to check p or q value 
 console.log(p , q)

@@ -6,4 +6,4 @@ function hourToSecond(hour){
     // return hour * 3600
     console.log(hour*3600)
 }   
-hourToSecond(24)
+hourToSecond(2)

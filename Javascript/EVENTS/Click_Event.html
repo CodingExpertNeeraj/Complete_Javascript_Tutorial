@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click event</title>
+</head>
+<style>
+    .ap{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="container">
+
+    </div>
+    
+
+    <script>
+        var box = document.getElementsByClassName('container')[0];
+
+        // box.style= height ='200px'; border = '2px solid red'
+        box.innerHTML = 'hello i am div';
+        box.style.background = 'red';
+
+        let str = 'mai ek div hu hahahahah'
+
+        box.addEventListener('dblclick',foo());
+
+            function foo(){
+                box.innerHTML = str.toUpperCase();
+                box.style.height = '300px';
+                 box.classList.add('ap');
+                //  box.classList.remove('container');
+                // if(box.hasAttribute('class', 'ap' == true)){
+                //     document.getElementsByClassName('ap')[0].style.background = 'yellow';
+                }
+            
+          console.log(box.hasAttribute('class','ap'))  ;
+          
+        
+          
+    </script>
+</body>
+</html>

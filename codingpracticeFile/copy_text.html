@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy text</title>
+</head>
+<style>
+     div{
+        /* box-sizing: border-box; */
+        /* display: flex; */
+        width: 300px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    button{
+        /* padding: 10px;
+        margin: 10px; */
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10%;
+        padding: 10px;
+    } 
+    body{
+        background-color: yellow;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    input{
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 50px; */
+        /* margin-top: 200px; */
+        height: 35px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 8%;
+    }
+    
+</style>
+<body>
+    <div>
+        
+    <input type="text" placeholder="  Type on me anything">
+    <button>Copy text</button>
+    </div> 
+
+
+    <script>
+        let dabba = document.querySelector('input');
+        let btn = document.querySelector('button');
+        btn.addEventListener("click", copy);
+
+        function copy(){
+            // alert("copied")
+            dabba.select();
+            document.execCommand('copy');
+        }
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

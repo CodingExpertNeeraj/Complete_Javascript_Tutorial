@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key up event</title>
+</head>
+
+<body>
+    <!-- <button class="keyup" onclick="this.style.background = 'yellow' ">press any key</button> -->
+    <!-- <input type="text" onclick="this.value = ' ' "> -->
+
+    <!-- <button id="btn">count</button> -->
+    <div class="counter"></div>
+    <script>
+
+        let value = document.addEventListener("keyup", up(this));
+        function up(elem){
+            // document.getElementsByClassName("counter")[0].innerText = this.value;
+            console.log(elem.value)
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg change</title>
+    
+<style>
+    div{
+        /* height: 300px; */
+        /* width: 100%; */
+        border: 1px solid red;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas aperiam deserunt pariatur a. Laborum accusamus atque ea asperiores aut aliquam veritatis error earum. Ipsa dolore alias accusantium nam sequi nisi blanditiis atque rem autem eos in laudantium consequuntur modi, delectus corporis eveniet possimus nulla quia itaque! Repellat, nesciunt cum pariatur veniam explicabo quisquam sit et distinctio laudantium totam debitis ducimus quasi, eligendi sequi suscipit quo accusantium temporibus expedita dolorum tempore voluptatum libero id odit in. Distinctio minima qui suscipit voluptate quo id commodi laudantium, sit magnam, culpa temporibus provident repellendus tenetur molestias repudiandae delectus aut voluptatibus aperiam. Harum, nostrum!
+    </div>
+
+
+    <input type="text">
+    <button onclick="document.calc.text.value"></button>
+    <script>
+
+        let colors = ["red", "blue","aqua","orange", "pink",'green']
+        let dabba = document.querySelector('div');
+        // setTimeout(myFun, 2000);
+
+        // function myFun(){
+            // alert("hi i am boss")
+            // dabba.style.backgroundColor = colors.map(i)
+            // let  newColors = colors.map(cf);
+            // function cf(c){
+            //     dabba.style.backgroundColor = c;
+            // }
+
+            // for (let i = 0; i < colors.length; i++) {
+            //     // const element = array[i];
+                
+            //     // document.write(colors[i]);
+                
+            // }
+
+        //     if (colors.length >= colors[0]) {
+        //         dabba.style.backgroundColor = colors[0];
+        //     } else {
+        //         return 0
+        //     }
+        // }
+
+        setInterval(() => {
+            for (let i = 0; i < colors.length; i++) {
+            dabba.style.backgroundColor = colors[i]
+            
+        }
+        }, 1000);
+
+        
+    </script>
+</body>
+</html>

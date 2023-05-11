@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Form_vaidation_REGEX.CSS">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <form action="#">
+            <h1>Login form</h1>
+            <label for="name">
+                <input type="text" placeholder="Enter your name here" id="Name">
+            </label>
+            <p id="un-error">pls enter a valid username</p>
+            <label for="email">
+                <input type="email" placeholder="Enter your email here" id="gmail">
+            </label>
+            <label for="">
+                <input type="password" placeholder="Enter your password" id="password">
+            </label>
+            <label for="">
+                <input type="number" placeholder="enter your mobile " id="mobile">
+            </label>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        var Name = document.getElementById("Name");
+        // var namePattern = /[A-Z] gi/;
+        // var btn = document.getElementById("submit").addEventListener("click",check());
+
+        // function check(){
+        //   if(Name.value.match(namePattern)){
+        //        console.log('match')
+        // }else{
+        //     alert("not match")
+        // }
+        // }
+    </script>
+
+</body>
+</html>

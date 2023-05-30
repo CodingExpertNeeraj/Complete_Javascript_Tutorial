@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome quote</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: aqua;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 500px; */
+        height: 200px;
+        display: block;
+        margin: 10px;
+        box-sizing: border-box;
+        /* height: 100vh; */
+        
+        border: 1px solid;
+    }
+</style>
+<body>
+    <div class="container">
+        
+    </div>
+    <button class="genquote">Generate quote</button>
+    <script>
+        // let btn = document.querySelector(".genquote").addEventListener("click",clickMe){
+        //     let  randomquote = [
+        //     "True frnds stab you in the front ",
+        //     "woman are made to be loved, not, understood",
+        //     "practice makes a man perfect ",
+        //     "hard work, will never loose ",
+        //     "be happy, always ",
+        //     "hare krishna hare rama ",
+        //     "radhe radhe ",
+        //     "jay shree ram ",
+        //     "jay, bajrang bali ",
+        //     "jay bageshwar dham "
+        //     ]
+        // }
+        
+
+            let btn = document.querySelector(".genquote");
+
+            btn.addEventListener("click",clickMe);
+
+            function clickMe(){
+                alert("hello")
+                let  randomquote = [
+            "True frnds stab you in the front ",
+            "woman are made to be loved, not, understood",
+            "practice makes a man perfect ",
+            "hard work, will never loose ",
+            "be happy, always ",
+            "hare krishna hare rama ",
+            "radhe radhe ",
+            "jay shree ram ",
+            "jay, bajrang bali ",
+            "jay bageshwar dham "
+            ]
+            }
+
+        let randq = document.querySelector(".container");
+        var rand = Math.floor(Math.random()*10);
+        randq.textContent = randomquote[rand];
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

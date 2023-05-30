@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>local storage</title>
 </head>
+
 <body>
     <h1>Local storage</h1>
-    <input type="text" placeholder="write something here">
+    <input id="input" type="text" placeholder="write something here">
     <button id="add">Add</button>
     <button id="remove">Remove it</button>
     <button id="clear">Clear all !</button>
 
-    
+
     <script>
-        let add = document.getElementById( "add").addEventListener("click",function(){
-            localStorage.setItem("movies","genious");
-            localStorage.setItem("language","javascript");
+
+        let add = document.getElementById("add").addEventListener("click", function () {
+            localStorage.setItem("movies", "genious");
+            localStorage.setItem("language", "javascript");
+            localStorage.setItem("cars", "audi");
 
             let ls = localStorage.getItem("movies");
             console.log(ls)
         });
 
-        let remove = document.getElementById("remove").addEventListener("click",function(){
+        let remove = document.getElementById("remove").addEventListener("click", function () {
             localStorage.removeItem("language")
         })
+
+        let clearAll = document.getElementById("clear").addEventListener("click", () => {
+            // alert("let me clear all");
+            localStorage.clear();
+        }) 
     </script>
 </body>
+
 </html>

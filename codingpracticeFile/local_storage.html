@@ -19,12 +19,14 @@
     <script>
 
         let add = document.getElementById("add").addEventListener("click", function () {
-            localStorage.setItem("movies", "genious");
-            localStorage.setItem("language", "javascript");
-            localStorage.setItem("cars", "audi");
+            let val = document.getElementById("input").value;
+            localStorage.setItem("movies", val);
+            localStorage.setItem("language", val);
+            localStorage.setItem("cars", val);
 
             let ls = localStorage.getItem("movies");
-            console.log(ls)
+            console.log(ls);
+            
         });
 
         let remove = document.getElementById("remove").addEventListener("click", function () {
